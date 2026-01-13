@@ -67,14 +67,6 @@ p {
     margin-bottom: 10px;
 }
 
-ul {
-    padding-left: 18px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
 @media (max-width: 600px) {
 
     body {
