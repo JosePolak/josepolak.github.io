@@ -1,112 +1,294 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <title>José Polak | Desenvolvedor Python</title>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.Polak | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">José Polak</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto"> <a class="nav-link" href="#sobre">Sobre</a>
+                    <a class="nav-link" href="#formacao">Formação</a> <a class="nav-link"
+                        href="#tecnologias">Tecnologias</a>
+                    <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                    <a class="nav-link" href="#projetos">Projetos</a>
+                    <a class="nav-link" href="https://github.com/JosePolak" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <header>
-        <h1>José Polak</h1>
-        <p>Desenvolvedor Python | Backend | Flask | SQL</p>
+    <div class="container">
 
-        <p>
-            São Paulo — Remoto | Híbrido | Presencial<br>
-            <a href="mailto:jose.polak@outlook.com">jose.polak@outlook.com</a> |
-            <a href="https://github.com/JosePolak" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/josepolak" target="_blank">LinkedIn</a>
+        <header id="inicio" class="py-5 mb-5 border-bottom text-center">
+            <h1 class="display-4 fw-bold mb-3">José Polak</h1>
+            <p class="lead text-dark mb-1">
+                Desenvolvimento Web · Backend · Python · Flask · SQL
+            </p>
+            <p class="text-muted">
+                <i class="bi bi-geo-alt-fill"></i> São Paulo — Remoto · Híbrido · Presencial
+            </p>
+        </header>
+
+        <section id="sobre" class="py-5 mb-5 border-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-4 fw-bold border-start border-primary border-4 ps-3">Sobre mim</h2>
+
+                    <p class="lead text-primary fw-semibold">
+                        Desenvolvedor Python com foco em backend, atuando com automação, bancos de dados e aplicações
+                        web.
+                    </p>
+
+                    <p>
+                        Desenvolvo projetos práticos utilizando <strong>Flask e SQLite</strong>, integrando dados,
+                        lógica de
+                        negócio e interface web.
+                    </p>
+
+                    <p>
+                        Venho construindo minha base de forma prática e progressiva, aplicando boas práticas de
+                        programação e
+                        automação no ambiente <strong>Linux (Ubuntu/Pop_OS!)</strong>.
+                    </p>
+
+                    <p>
+                        Atualmente em transição de carreira, meu objetivo é atuar como desenvolvedor backend Python,
+                        entregando
+                        soluções claras, funcionais e bem documentadas.
+                    </p>
+
+                    <div class="mt-4 p-3 bg-white border rounded-3 shadow-sm">
+                        <h6 class="fw-bold mb-1"><i class="bi bi-mortarboard-fill me-2"></i>Educação</h6>
+                        <small class="text-muted">Desenvolvimento Web — Faculdade Anhanguera (Pausado)</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                    <div class="p-4 border rounded shadow-sm bg-white">
+                        <h5 class="mb-3 fw-bold">Conecte-se comigo</h5>
+                        <div class="d-grid gap-2">
+                            <a href="https://www.linkedin.com/in/josepolak" class="btn btn-outline-primary btn-sm"
+                                target="_blank">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/JosePolak" class="btn btn-outline-dark btn-sm" target="_blank">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                            <a href="mailto:jose.polak@outlook.com" class="btn btn-outline-danger btn-sm">
+                                <i class="bi bi-envelope-at-fill"></i> E-mail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="py-5 mb-5 border-bottom">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-4 fw-bold">Formação</h2>
+
+                    <p>
+                        Estudos em <strong>Python</strong> com foco em automação, bancos de dados e desenvolvimento
+                        backend,
+                        com projetos práticos utilizando <strong>SQLite, Flask e APIs REST</strong> (conceitos e prática
+                        inicial),
+                        aplicando boas práticas de programação.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="py-5 mb-5 bg-light rounded-4 p-4 shadow-sm">
+            <h2 class="mb-4 fw-bold text-center">Tecnologias & Ferramentas</h2>
+            <div class="row text-center g-4">
+
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white h-100 rounded shadow-sm border-top border-primary border-4">
+                        <i class="bi bi-cpu-fill fs-1 text-primary mb-2"></i>
+                        <h6 class="fw-bold mb-3">Backend</h6>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-dark">Flask</span>
+                            <span class="badge bg-secondary">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white h-100 rounded shadow-sm border-top border-info border-4">
+                        <i class="bi bi-window-sidebar fs-1 text-info mb-2"></i>
+                        <h6 class="fw-bold mb-3">Frontend</h6>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-info text-dark">HTML/CSS</span>
+                            <span class="badge bg-purple"
+                                style="background-color: #7952b3; color: white;">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white h-100 rounded shadow-sm border-top border-warning border-4">
+                        <i class="bi bi-ubuntu fs-1 text-warning mb-2"></i>
+                        <h6 class="fw-bold mb-3">Ambiente</h6>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-dark">Ubuntu 24.04</span>
+                            <span class="badge bg-secondary">Terminal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-white h-100 rounded shadow-sm border-top border-success border-4">
+                        <i class="bi bi-tools fs-1 text-success mb-2"></i>
+                        <h6 class="fw-bold mb-3">Ferramentas</h6>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-dark">Git</span>
+                            <span class="badge bg-danger">PyTest</span>
+                            <span class="badge bg-info text-dark">Render</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projetos" class="py-5">
+            <h2 class="mb-4 fw-bold">Meus Projetos</h2>
+            <div class="row">
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border border-top border-info border-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h5 class="card-title fw-bold text-dark">Canivete Multiferramentas</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">Python, Flask, SQLAlchemy, SQLite</h6>
+                            <p class="card-text text-secondary">Utilitário web para conversão de moedas em tempo real
+                                com histórico persistente e integração com APIs financeiras.</p>
+                            <div class="mt-auto d-flex gap-2 pt-3">
+                                <a href="https://canivete-caq8.onrender.com/" class="btn btn-primary btn-sm px-3"
+                                    target="_blank">Acessar App</a>
+                                <a href="https://github.com/JosePolak/canivete" class="btn btn-dark btn-sm px-3"
+                                    target="_blank">Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h5 class="card-title fw-bold text-dark">Registro de Despesas</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">Python, Flask, SQLite</h6>
+                            <p class="card-text text-secondary">Aplicação web desenvolvida em Flask para registro e
+                                visualização de despesas pessoais, com persistência em SQLite e deploy em produção no
+                                Render.</p>
+
+                            <div class="mt-auto d-flex gap-2 pt-3">
+
+                                <a href="https://registro-despesas-md0c.onrender.com/"
+                                    class="btn btn-primary btn-sm px-3" target="_blank">
+                                    Acessar App
+                                </a>
+
+                                <a href="https://github.com/JosePolak/registro_despesas"
+                                    class="btn btn-dark btn-sm px-3" target="_blank">
+                                    Ver Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h5 class="card-title fw-bold text-dark">Relatório de Vendas</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">Python, Flask, SQLite</h6>
+                            <p class="card-text text-secondary">Aplicação backend desenvolvida em Python com Flask e
+                                SQLite, incluindo interface web e rota de API para exposição de dados em JSON.</p>
+
+                            <div class="mt-auto d-flex gap-2 pt-3">
+
+                                <a href="https://github.com/JosePolak/relatorio_vendas_flask"
+                                    class="btn btn-dark btn-sm px-3" target="_blank">
+                                    Ver Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h5 class="card-title fw-bold text-dark">Gerador de Senhas</h5>
+                            <h6 class="card-subtitle mb-3 text-muted">HTML, CSS, JavaScript, Vercel</h6>
+                            <p class="card-text text-secondary">Gerador de senhas em JavaScript para praticar lógica e
+                                manipulação de DOM. Útil para geração de senhas seguras.</p>
+
+                            <div class="mt-auto d-flex gap-2 pt-3">
+
+                                <a href="https://senhas-liart.vercel.app/" class="btn btn-primary btn-sm px-3"
+                                    target="_blank">
+                                    Acessar App
+                                </a>
+
+                                <a href="https://github.com/JosePolak/gerador_senhas" class="btn btn-dark btn-sm px-3"
+                                    target="_blank">
+                                    Ver Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center py-4 mt-5 border-top">
+        <p class="text-muted">
+            &copy; 2026 - José Polak
         </p>
-    </header>
+    </footer>
 
-    <hr>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <section>
-        <h2>Resumo Profissional</h2>
-        <p>Desenvolvedor Python com foco em backend, atuando com automação, bancos de dados e aplicações web. </p>
-        <p>Desenvolvo projetos práticos utilizando Flask e SQLite, integrando dados, lógica de negócio e interface web.</p>
-        <p>Venho construindo minha base de forma prática e progressiva, aplicando boas práticas de programação e
-            automação no ambiente Linux (Ubuntu/Pop_OS!).</p>
-        <p>Atualmente em transição de carreira, meu objetivo é atuar como desenvolvedor backend Python, entregando
-            soluções claras, funcionais e bem documentadas.</p>
-    </section>
+    <button type="button" class="btn btn-primary btn-lg rounded-circle shadow" id="btn-back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-    <section>
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-            <li><strong>Linguagem:</strong> Python</li>
-            <li><strong>Backend:</strong> Flask, rotas, templates</li>
-            <li><strong>Frontend:</strong> HTML, CSS, Bootstrap</li>
-            <li><strong>Ambiente:</strong> Linux (Ubuntu/Pop_OS!)</li>
-            <li><strong>Banco de dados:</strong> SQLite, SQL (CRUD, consultas)</li>
-            <li><strong>Automação:</strong> Scripts, manipulação de arquivos, CSV</li>
-            <li><strong>Dados:</strong> Pandas (limpeza e transformação)</li>
-            <li><strong>Ferramentas:</strong> Git, GitHub, VS Code, Postman (testes), PyTest, Render</li>
-        </ul>
-    </section>
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
 
-    <section>
-        <h2>Projetos</h2>
-        <h3>Portfolio</h3>
-        <p>
-            Veja outra versão deste portfolio construída com <strong>Flask</strong> e <strong>Bootstrap</strong>.
-            <br>
-            <small><em>Obs.: O carregamento inicial pode levar cerca de 1 minuto (ou mais) pois o serviço entra 
-            em repouso no Render.</em></small>
-        </p>
-        <p>
-            <a href="https://portfolio-k5xr.onrender.com" target="_blank">🔗 Ver aplicação</a> |
-            <a href="https://github.com/JosePolak/portfolio" target="_blank">🔗 Ver repositório</a>
-        </p>
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
 
-        <h3>Canivete Multiferramentas — Flask + SQLAlchemy + API financeira</h3>
-        <p>
-            Utilitário web para conversão de moedas em tempo real com histórico persistente. Construído 
-            com Flask, SQLAlchemy, SQLite, Jinja2 (entre outras tecnologias), essa é a primeira ferramenta do 
-            canivete. As outras virão em breve.
-            <br>
-            <small><em>Obs.: Como esse projeto está hospedado no Render, pode levar um minuto (até um pouco mais) 
-            para ficar disponível no navegador. Tenha paciência...</em></small>
-        </p>
-        <p>
-            <a href="https://canivete-caq8.onrender.com" target="_blank">🔗 Ver aplicação</a> |
-            <a href="https://github.com/JosePolak/canivete" target="_blank">🔗 Ver repositório</a>
-        </p>
-
-        <h3>Registro de Despesas — Flask + SQLite</h3>
-        <p>
-            Aplicação web desenvolvida em Flask para cadastro e listagem de despesas, com persistência em SQLite,
-            uso de templates HTML e deploy em ambiente cloud (Render), demonstrando fluxo completo do backend à
-            produção.
-        </p>
-        <p>
-            <a href="https://registro-despesas-md0c.onrender.com" target="_blank">🔗 Ver aplicação</a> |
-            <a href="https://github.com/JosePolak/registro_despesas" target="_blank">🔗 Ver repositório</a>
-        </p>
-
-        <h3>Relatório de Vendas - Flask + SQLite + API JSON</h3>
-        <p>
-            Aplicação backend desenvolvida em Python com Flask e SQLite, incluindo interface web e rota de API para
-            exposição de dados em JSON.
-        </p>
-
-        <p>
-            <a href="https://github.com/JosePolak/relatorio_vendas_flask" target="_blank">🔗 Ver repositório</a>
-        </p>
-    </section>
-
-    <section>
-        <h2>Formação</h2>
-        <p>
-            Estudos em Python com foco em automação, bancos de dados e desenvolvimento backend,
-            com projetos práticos utilizando SQLite, Flask e APIs REST (conceitos e prática inicial), aplicando boas
-            práticas de programação.
-        </p>
-    </section>
-
+        mybutton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 
 </html>
