@@ -11,16 +11,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4 shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#inicio">José Polak</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ms-auto"> <a class="nav-link" href="#sobre">Sobre</a>
-                    <a class="nav-link" href="#formacao">Formação</a> <a class="nav-link"
-                        href="#tecnologias">Tecnologias</a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                    <a class="nav-link" href="#formacao">Formação</a>
                     <a class="nav-link" href="#tecnologias">Tecnologias</a>
                     <a class="nav-link" href="#projetos">Projetos</a>
                     <a class="nav-link" href="https://github.com/JosePolak" target="_blank">GitHub</a>
@@ -272,8 +272,26 @@
     </button>
 
     <script>
-        let mybutton = document.getElementById("btn-back-to-top");
+        // 1. FECHAR MENU AO CLICAR
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('navbarNav');
 
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                // Remove a classe 'show' (que abre o menu no Bootstrap)
+                if (menuToggle.classList.contains('show')) {
+                    menuToggle.classList.remove('show');
+
+                    // Opcional: Ajusta o atributo do botão hamburger para 'fechado'
+                    const toggler = document.querySelector('.navbar-toggler');
+                    toggler.setAttribute('aria-expanded', 'false');
+                    toggler.classList.add('collapsed');
+                }
+            });
+        });
+
+        // 2. BOTÃO VOLTAR AO TOPO
+        const mybutton = document.getElementById("btn-back-to-top");
         window.onscroll = function () {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
@@ -283,10 +301,7 @@
         };
 
         mybutton.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
 </body>
